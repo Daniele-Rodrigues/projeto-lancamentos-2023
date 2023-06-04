@@ -1,0 +1,134 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    max-width: 1280;
+    margin: 0 auto;
+    background-color: #363636;
+    color: #f8fafa;
+}
+
+body.modo-escuro{
+    background-color: white;
+    color: #40E0D0;
+
+}
+
+header{
+    background-color: #363636;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+    height: 80px;
+    
+}
+
+header .logo,
+header .imagem-botao{
+    width: 80px;
+    transition: 0.2s ease-in-out;
+}
+header .logo{
+    border-radius: 40px;
+}
+
+header .imagem-botao{
+    height: 50px;
+    mix-blend-mode: exclusion;
+}
+
+header #botao-alterar-tema{
+    background-color: none;
+    border: none;
+    
+}
+
+header .logo:hover,
+header .imagem-botao:hover,
+main .capa-filme:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+main{
+    padding: 25px;
+}
+
+main .listagem-filmes{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+main .capa-filme{
+    background-color: #bd5959;
+    width: 200px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    border-radius: 15px;
+    transition: 0.2s ease-in-out;
+}
+
+main .capa-filme:hover{
+    background-color: #b82525;
+
+}
+
+.modo-escuro .listagem-filme{
+    background-color: #a8a8a8;
+}
+
+main .capa-filme .informacoes{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #f8fafa;
+    border-radius: 10px;
+    background-color: #363636;
+}
+main .capa-filme .informacoes span{
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 10px;
+   
+}
+main .capa-filme .capa-dentro{
+    width: 150px;
+    height: 250px;
+    border-radius: 10px;
+}
+
+main .capa-filme .opcoes{
+    display: flex;
+    gap: 15px;
+    padding: 8px;
+    border-radius: 10px;
+} 
+
+.assistir{
+    background-color: #363636;
+    border-radius: 5px;
+    border: 1px solid #f8fafa;
+}
+
+main .descricao{
+    max-height: 80px;
+    overflow-y: scroll;
+    font-size: 12px;
+    padding-right: 10px;
+}
+
+main .filme{
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+.filme .titulo-do-filme{
+    text-align: center;
+    color: #b82525;
+}
+
+.botao-voltar{
+    text-align: center;
+    color: #b82525;
+}
